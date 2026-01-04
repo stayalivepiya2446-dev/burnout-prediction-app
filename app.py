@@ -8,12 +8,14 @@ st.title("Burnout Prediction System")
 
 # Training data
 data = {
-    "Mood":   [5,4,3,2,1,2,3,5],
-    "Sleep":  [8,7,6,5,4,4,5,8],
-    "Screen": [4,5,6,7,9,8,7,3],
-    "Work":   [5,6,7,8,10,9,8,4],
-    "Burnout":["Low","Low","Medium","Medium","High","High","Medium","Low"]
+    "Mood":   [5,4,3,2,1,2,3,5, 1,2,4,5],
+    "Sleep":  [8,7,6,5,4,4,5,8, 3,4,7,8],
+    "Screen": [4,5,6,7,9,8,7,3, 10,9,4,3],
+    "Work":   [5,6,7,8,10,9,8,4, 11,9,6,4],
+    "Burnout":["Low","Low","Medium","Medium","High","High","Medium","Low",
+                "High","High","Low","Low"]
 }
+
 
 df = pd.DataFrame(data)
 
